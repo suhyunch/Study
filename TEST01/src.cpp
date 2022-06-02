@@ -27,8 +27,6 @@ int main(void) {
 	cout << a << endl;
 	cout << another_a << endl;
 	
-
-
-	
+		
 	return 0;
 }
