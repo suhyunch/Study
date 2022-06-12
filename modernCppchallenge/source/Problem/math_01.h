@@ -1,10 +1,16 @@
 #ifndef __MATH_01_H__
 #define __MATH_01_H__
 
-class Math01 {
+#include "problem.h"
+
+
+class Math01 :public Problem {
 	int num;
 public:
-	Math01(int inputNumber);
-	int problemSolving(void);
+	Math01(std::string key, int inputNumber);
+	void problemSolving(void) override;
+
+	int getResult(void);
 };
 #endif
+

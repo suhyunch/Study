@@ -7,9 +7,12 @@ int main(int argc, char* argv[]) {
 
     cout << "Run test" << endl;
 
-    Math01 math01 = Math01(atoi(argv[2]));
+    //@todo: Add parser
+    Math01 math01 = Math01("M01", atoi(argv[2]));
     
-    cout << "Answer :" << math01.problemSolving() << endl;
+    math01.problemSolving();
+
+    cout << "Answer :" << math01.getResult() << endl;
     return 0;
 
 }
